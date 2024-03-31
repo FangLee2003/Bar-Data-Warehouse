@@ -1,14 +1,14 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
     <Database>SSAS_Project</Database>
-    <Server>LAPTOP-RG5QA0PH\MSSQLSERVER02</Server>
-    <ConnectionString>Data Source=LAPTOP-RG5QA0PH\MSSQLSERVER02;Timeout=0</ConnectionString>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
   </Target>
   <Options>
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>Default</ProcessingOption>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,78 +19,92 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>h+RA7fMo6yy190V4xkX4mVoDpcg=28/12/2023 15:37:5528/12/2023 13:37:23</TimeStamp>
+        <TimeStamp>xS5XmESAbFrr4zmdCrrDVYkvNNk=3/31/2024 12:21:15 AM3/30/2024 5:58:48 PM</TimeStamp>
         <ID>
-          <String>SSIS Project</String>
+          <String>SSIS_Project</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>tz1W/yjmh0KwBR64q/z16WglStA=28/12/2023 13:39:2228/12/2023 13:39:22</TimeStamp>
+        <TimeStamp>uLlZxeGVhwL7RTClmu3SW13RA/o=3/31/2024 12:41:36 AM3/30/2024 6:02:51 PM</TimeStamp>
         <ID>
-          <String>SSAS_Project_sourceview</String>
+          <String>SSIS Project 1</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>uPf+Is33HqgolhDRazQDeHcQv3E=28/12/2023 13:43:2628/12/2023 13:41:22</TimeStamp>
-        <ID>
-          <String>DIM Category</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>PPDWkfcOBluUHKcO58exDw3j/Dk=28/12/2023 13:43:2628/12/2023 13:41:22</TimeStamp>
+        <TimeStamp>bQ7TqGBrZ+9JBxjRijqF9qps1R8=3/31/2024 11:08:58 PM3/30/2024 7:00:02 PM</TimeStamp>
         <ID>
           <String>DIM Invoice</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>vcDz3vvCIH0tru22bvm5TQjRgSI=28/12/2023 13:43:2628/12/2023 13:41:22</TimeStamp>
+        <TimeStamp>R2N+BggYACeUdTDBl3yVYUrjpbw=4/1/2024 4:06:34 AM3/30/2024 7:00:02 PM</TimeStamp>
         <ID>
           <String>DIM Item</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>HqsX+0YTCmX9dsC1sdbIcC5mnsU=28/12/2023 13:43:2628/12/2023 13:41:22</TimeStamp>
+        <TimeStamp>ZT6kssmrPKi9mumMKP9EcOZQGk4=4/1/2024 3:47:17 AM3/30/2024 7:00:02 PM</TimeStamp>
+        <ID>
+          <String>DIM Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>j4awHi/mA3mlpTEG4oQz5eBuJHQ=3/31/2024 10:38:19 PM3/30/2024 7:00:02 PM</TimeStamp>
         <ID>
           <String>DIM Store</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>TcxRaJz0e4+pnS4BP1F1IFxTfbc=28/12/2023 13:43:2628/12/2023 13:41:22</TimeStamp>
+        <TimeStamp>h3T1c5Ggua+WvvlW0tkay55BUmw=3/31/2024 10:39:45 PM3/30/2024 7:00:02 PM</TimeStamp>
         <ID>
           <String>DIM Vendor</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>KGHz1nCU05kKaBXGv6dxGro4iYM=28/12/2023 13:43:2628/12/2023 13:41:22</TimeStamp>
+        <TimeStamp>iiRDE85BqRnT/H8YaVgYx78ZGOU=3/31/2024 10:39:45 PM3/30/2024 7:00:02 PM</TimeStamp>
         <ID>
-          <String>DIM Time</String>
+          <String>DIM Category</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IY6ZCiToXHHa16M2CotR2n6ezsA=3/31/2024 11:07:51 PM3/31/2024 12:36:49 AM</TimeStamp>
+        <ID>
+          <String>DIM Location</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>35/EUSFhLLaAq8cTTgRIk678QD0=28/12/2023 13:43:2628/12/2023 13:41:22DTD0aVgXSbQhjS3DWeM3E+i7NQc=28/12/2023 13:41:2228/12/2023 13:41:22</TimeStamp>
+        <TimeStamp>DSrN98JqmNgZuIufGwiwIHggdxE=3/31/2024 7:15:15 PM3/30/2024 7:00:02 PMtiO46uaIbQrufDY6GJiGu4qqelk=3/31/2024 10:14:20 AM3/30/2024 7:00:02 PM</TimeStamp>
         <ID>
-          <String>SSAS_Project_cube</String>
+          <String>SSIS Project 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>DBQZJPjbyjwv+uLJAS4yBJe4C9w=4/1/2024 4:17:55 AM4/1/2024 4:17:53 AM</TimeStamp>
+        <ID>
+          <String>Linear Regression Model</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>vIv7Wjo3uLz1459aP0uscz2/PWY=28/12/2023 13:36:0928/12/2023 13:36:09</TimeStamp>
+      <TimeStamp>kVy0QyVDLWgiyT01h5xswtEaXGk=3/31/2024 9:44:42 PM3/30/2024 5:53:18 PM</TimeStamp>
       <ID>
-        <String>SSAS_Project</String>
+        <String>OLAP_Project</String>
       </ID>
     </DatabaseSnapshot>
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2023-12-28T08:38:06.036667Z</LastDeployed>
+  <LastDeployed>2024-03-31T21:20:06.26Z</LastDeployed>
 </DeploymentSnapshot>

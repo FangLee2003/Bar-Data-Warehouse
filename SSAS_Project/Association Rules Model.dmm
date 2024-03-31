@@ -1,0 +1,309 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="07e9945f-a685-4050-9f50-e92ba55e919f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>FACT Sales</ID>
+  <Name>Association Rules Model</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_FACT_Sales</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7497" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="0" y="0" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FACT_Sales" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FACT_Sales" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7497</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5000</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="53d6720b-5d9f-4c66-9e40-b3ed0a1c5d03">
+    <DataSourceViewID>SSIS Project 1</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="056abf35-2ece-411b-8f15-c80703f0249a">
+      <ID>Category Key</ID>
+      <Name>Category Key</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ffdf337-0706-4377-8433-4463661fcff8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3bb83bba-1125-44b5-91c5-28becd1da298">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>category_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6ef0126a-0583-4998-b1a6-45483abe1444">
+      <ID>Cost</ID>
+      <Name>Cost</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="90176bde-ebae-4a1f-a97e-8fdae91b1256">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ccad037-8594-4c93-96be-24abab2eb5ba">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>cost</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="97c55846-28e2-4a55-b920-1153ff4864b9">
+      <ID>Invoice Key</ID>
+      <Name>Invoice Key</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ef419fe-a5ca-4de3-b967-c78e05bda0ba">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b80db0c8-66c6-406a-9c3d-62c3b7fe3680">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>invoice_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="617376c0-2bf1-4893-b9cb-259e77d2f75f">
+      <ID>Item Key</ID>
+      <Name>Item Key</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af3a5d80-0378-42d4-93b8-ae7c4e52a030">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a21c8af2-e74f-4878-ad81-e735855d9b6e">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>item_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0ac46e6b-0f23-4ded-b4ef-897b9259e684">
+      <ID>Location Key</ID>
+      <Name>Location Key</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f004826a-37ee-4710-ae70-3e9d5f2585f0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="97fbb9d3-78c1-4989-bccd-bd7da340ba17">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>location_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="936e39c2-b76e-4246-8d2f-373243fd3813">
+      <ID>Profit</ID>
+      <Name>Profit</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="687214a1-737f-4d45-a446-d1f1eae99f3a">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f66ea74-a5dc-4365-8d66-297748d6cf63">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>profit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0598ff2e-ea54-4514-b9f4-3f8929ebfdbc">
+      <ID>Revenue</ID>
+      <Name>Revenue</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2756288b-5bed-4b46-bf1c-ded145848711">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81084c63-71c3-435d-98da-14826f3bd33d">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>revenue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="aeddbbcc-13a8-4a48-abf6-cda8ca15c3df">
+      <ID>Store Key</ID>
+      <Name>Store Key</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="db5e6464-ad42-4a33-a5a7-0864c27ea188">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef976fb5-c798-4319-8901-73ed0af4e771">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>store_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3cb4a5db-d500-4919-a12c-1aaa6e614ab9">
+      <ID>Time Key</ID>
+      <Name>Time Key</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d889ef6-2216-4455-8ca0-53f3a1c3f82a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00cceaab-7fd5-4540-94b1-90de700859ac">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>time_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="07e52255-8bbf-46d7-b13b-0056aca42f97">
+      <ID>Vendor Key</ID>
+      <Name>Vendor Key</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c14a9419-34c4-42c7-9390-ffb7e7063010">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e6e4039e-1183-4c40-92b0-ea1e4d3539f8">
+            <TableID>dbo_FACT_Sales</TableID>
+            <ColumnID>vendor_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="bd55b81e-94da-4f7a-b118-892f9c10d683">
+      <ID>FACT Sales</ID>
+      <Name>FACT Sales</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="4c4bdeb6-857e-4136-9cb5-dec7ca5f07df">
+          <ID>Category Key</ID>
+          <Name>Category Key</Name>
+          <SourceColumnID>Category Key</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="93250cdd-49e9-4d6c-b9bd-5688dfead494">
+          <ID>Cost</ID>
+          <Name>Cost</Name>
+          <SourceColumnID>Cost</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="6f330a1c-fcb5-496d-9289-deb575d28d8b">
+          <ID>Invoice Key</ID>
+          <Name>Invoice Key</Name>
+          <SourceColumnID>Invoice Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="9f45b5f7-ae56-429b-86cf-35cf5733ad98">
+          <ID>Item Key</ID>
+          <Name>Item Key</Name>
+          <SourceColumnID>Item Key</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="478560ce-7118-461b-ab7a-84ba34634ee3">
+          <ID>Location Key</ID>
+          <Name>Location Key</Name>
+          <SourceColumnID>Location Key</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8c1eaa16-b6c1-4613-86a3-5ef102a00910">
+          <ID>Profit</ID>
+          <Name>Profit</Name>
+          <SourceColumnID>Profit</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="3750af0d-8dc9-47ab-aa58-33d72dd464f2">
+          <ID>Revenue</ID>
+          <Name>Revenue</Name>
+          <SourceColumnID>Revenue</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="c17b4438-e019-4026-a1f2-744ce5ff3734">
+          <ID>Store Key</ID>
+          <Name>Store Key</Name>
+          <SourceColumnID>Store Key</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e8f9d663-f944-4e4f-a43a-b1a50dd3a575">
+          <ID>Time Key</ID>
+          <Name>Time Key</Name>
+          <SourceColumnID>Time Key</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="650ae085-3f6f-4456-b60d-622e3c394f8c">
+          <ID>Vendor Key</ID>
+          <Name>Vendor Key</Name>
+          <SourceColumnID>Vendor Key</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>20</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

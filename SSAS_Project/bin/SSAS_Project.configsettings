@@ -2,23 +2,23 @@
   <Database>
     <DataSources>
       <DataSource>
-        <ID>SSIS Project</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=LAPTOP-RG5QA0PH;Persist Security Info=True;Password=;User ID=;Initial Catalog=SSIS_Project</ConnectionString>
+        <ID>SSIS_Project</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=FANGLEELAPTOP;Persist Security Info=True;Password=;User ID=;Initial Catalog=SSIS_Project</ConnectionString>
         <ImpersonationInfo>
-          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>DIM Category</ID>
-      </Dimension>
-      <Dimension>
         <ID>DIM Invoice</ID>
       </Dimension>
       <Dimension>
         <ID>DIM Item</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM Time</ID>
       </Dimension>
       <Dimension>
         <ID>DIM Store</ID>
@@ -27,53 +27,21 @@
         <ID>DIM Vendor</ID>
       </Dimension>
       <Dimension>
-        <ID>DIM Time</ID>
+        <ID>DIM Category</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM Location</ID>
       </Dimension>
     </Dimensions>
+    <MiningStructures>
+      <MiningStructure>
+        <ID>Linear Regression Model</ID>
+      </MiningStructure>
+    </MiningStructures>
     <Cubes>
       <Cube>
-        <ID>SSAS_Project_cube</ID>
+        <ID>SSIS Project 1</ID>
         <MeasureGroups>
-          <MeasureGroup>
-            <ID>DIM Category</ID>
-            <Partitions>
-              <Partition>
-                <ID>DIM Category</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>DIM Invoice</ID>
-            <Partitions>
-              <Partition>
-                <ID>DIM Invoice</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>DIM Item</ID>
-            <Partitions>
-              <Partition>
-                <ID>DIM Item</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>DIM Store</ID>
-            <Partitions>
-              <Partition>
-                <ID>DIM Store</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>DIM Vendor</ID>
-            <Partitions>
-              <Partition>
-                <ID>DIM Vendor</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
           <MeasureGroup>
             <ID>FACT Amount</ID>
             <Partitions>
@@ -91,10 +59,10 @@
             </Partitions>
           </MeasureGroup>
           <MeasureGroup>
-            <ID>DIM Time</ID>
+            <ID>DIM Invoice</ID>
             <Partitions>
               <Partition>
-                <ID>DIM Time</ID>
+                <ID>DIM Invoice</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

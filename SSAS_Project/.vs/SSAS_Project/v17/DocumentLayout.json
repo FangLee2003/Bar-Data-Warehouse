@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Bar-Data-Warehouse\\SSAS_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|D:\\Bar-Data-Warehouse\\SSAS_Project\\DIM Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|solutionrelative:DIM Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|D:\\Bar-Data-Warehouse\\SSAS_Project\\SSAS Project.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|solutionrelative:SSAS Project.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DIM Time.dim [Design]",
+              "DocumentMoniker": "D:\\Bar-Data-Warehouse\\SSAS_Project\\DIM Time.dim",
+              "RelativeDocumentMoniker": "DIM Time.dim",
+              "ToolTip": "D:\\Bar-Data-Warehouse\\SSAS_Project\\DIM Time.dim [Design]",
+              "RelativeToolTip": "DIM Time.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-31T20:25:14.645Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OLAP Project.cube [Design]",
+              "DocumentMoniker": "D:\\Bar-Data-Warehouse\\SSAS_Project\\SSAS Project.cube",
+              "RelativeDocumentMoniker": "SSAS Project.cube",
+              "ToolTip": "D:\\Bar-Data-Warehouse\\SSAS_Project\\SSAS Project.cube [Design]",
+              "RelativeToolTip": "SSAS Project.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-31T19:12:56.155Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

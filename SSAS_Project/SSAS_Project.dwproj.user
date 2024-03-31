@@ -5,19 +5,19 @@
       <Options>
         <UserIDs>
           <ConfigurationSetting>
-            <Id>SSIS Project</Id>
-            <Name>SSIS Project</Name>
-            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzn3blIVlZ0aURqNsjP/MKAAAAAAaAAAAUwBTAEkAUwAgAFAAcgBvAGoAZQBjAHQAAAAQZgAAAAEAACAAAAD2Dv3EL+r1R7d9sG6uDTyDwopVmM8Ky4SdrpMphLk4CwAAAAAOgAAAAAIAACAAAAAPKX5LBew0F4CWQB+gm0kAmgRlns2nSNJAi+GLelbFIRAAAAClt1J7UDf3loMFtuMedXSSQAAAACs+xf3VFtv5pAJQO5+AVu5wcNDXF5qPqOIQBBFK0YTal+lnazVmGZ7DilpEUaQk/3vcys+bQGuah9krMi4illc=</Value>
+            <Id>SSIS_Project</Id>
+            <Name>SSIS_Project</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIusy1S1oUet5EXKLsqkVgAAAAAaAAAAUwBTAEkAUwBfAFAAcgBvAGoAZQBjAHQAAAAQZgAAAAEAACAAAADNdQmDf8h5zS9pzhCUs9Ys5fkm/9aZA2dGa+IdQHolUQAAAAAOgAAAAAIAACAAAAAcAXqHVFHLu7Qef+JHm4fIlnjRKW9JRUuolb+UlJy/IxAAAADBrkWYN0KhJeJ7647kMItaQAAAAKfrMPSLEVoWiCAK4cUS4jxwS97mdazWPiL2qDWFC3q7OPidlYohbPXhx4M3GnHc7p1s/D8jX6cGYSUdkxjtKWc=</Value>
           </ConfigurationSetting>
         </UserIDs>
         <UserPasswords>
           <ConfigurationSetting>
-            <Id>SSIS Project</Id>
-            <Name>SSIS Project</Name>
-            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzn3blIVlZ0aURqNsjP/MKAAAAAAaAAAAUwBTAEkAUwAgAFAAcgBvAGoAZQBjAHQAAAAQZgAAAAEAACAAAAAm9l+3li0tOO5FHJWl1v4n1O4SNVP/koqqbyDR19GnkQAAAAAOgAAAAAIAACAAAAAc2tcY1EAXu6+ReiduPdt/JY3Nl2by3PUJyTnMS0v4CCAAAAD9LfBj1WcTDfxPxeZHUkesx3kZZwOTHhQ78ASaoI17uEAAAADWgBj+9nF6UpeLyuo4A++2+LTXb/PPa00QPvc4RsYd3N2cRH+Uw1fQrSuO9P2clbiqEb3EFTHtpzPkm5mpptRA</Value>
+            <Id>SSIS_Project</Id>
+            <Name>SSIS_Project</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIusy1S1oUet5EXKLsqkVgAAAAAaAAAAUwBTAEkAUwBfAFAAcgBvAGoAZQBjAHQAAAAQZgAAAAEAACAAAADICLhVjQh/Z+BdvLDKEPm4rBpIUP0BbLgg9B6rCC0D0wAAAAAOgAAAAAIAACAAAAAhPfK26zcbKWDVKw0jiMp8joe5TTwaH8OkEOEiITNKkBAAAAAu2hosNfY0wl4lg/XmUmRVQAAAAOhI/Ja9TbuwQDUuyBqKcWkmmf2Y3giNrWswder++DEuabuffm+MVZPDLHmXlEEvNl4iV6Xz+8bGQfrN1vSIe/o=</Value>
           </ConfigurationSetting>
         </UserPasswords>
-        <TargetServer>LAPTOP-RG5QA0PH\MSSQLSERVER02</TargetServer>
+        <TargetServer>localhost</TargetServer>
         <TargetDatabase>SSAS_Project</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

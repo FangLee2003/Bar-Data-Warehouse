@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dbf4aa18-7b38-4966-a3f0-6412f96b4b26" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8ea4a86e-5714-4fab-b19a-4059f3e15399" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>DIM Item</ID>
   <Name>DIM Item</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2245" scrolltop="-4403" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8001" y="11832" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2722" scrolltop="-5191" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7324" y="10033" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_Item" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3471" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_Item" left="-22" top="-191" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3471" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e00008f0d0000d30b0000" />
             </control>
@@ -47,67 +47,91 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-2245</Value>
+      <Value>-2722</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-4403</Value>
+      <Value>-5191</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>20</Value>
+      <Value>-22</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>0</Value>
+      <Value>-191</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="163">
+            <Shape Id="Item Key" Expanded="true">
+              <Attributes>
+                <Attribute Id="Item Key" />
+                <Attribute Id="Bottle Volume Ml" />
+                <Attribute Id="Item Description" />
+                <Attribute Id="Item Number" />
+                <Attribute Id="State Bottle Cost" />
+                <Attribute Id="State Bottle Retail" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7976e96d-3006-4256-a211-9f8bf5784322">
-    <DataSourceViewID>SSAS_Project_sourceview</DataSourceViewID>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="96932747-743d-4675-9fc4-bf7030b7626f">
+    <DataSourceViewID>SSIS Project 1</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="e2a10a7c-c83e-4bfd-9bfb-5a9db2b33988">
+  <ErrorConfiguration dwd:design-time-name="61da3c90-8b28-4cb6-b80a-e90300cd6dc1">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="48eff005-f7c3-4c69-88ce-c73d6f20e337">
+    <Attribute dwd:design-time-name="717abbcc-7044-4555-8693-06feb4cd6792">
       <ID>Item Key</ID>
       <Name>Item Key</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6ddf80d5-40df-4524-baa0-16f004f432ae">
+        <KeyColumn dwd:design-time-name="8249b233-dca8-4cf8-8d62-cb6825ceec47">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a83a5cd2-59a3-4f43-b1f3-dd767268e033">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d9c92bf2-9ffb-4dea-b111-7bea3b839bb7">
             <TableID>dbo_DIM_Item</TableID>
             <ColumnID>item_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="9f466a90-dd8b-4887-9cca-96b771de4908">
+        <AttributeRelationship dwd:design-time-name="7e9f664d-9a97-48f0-a8c3-ceffe53f56a6">
+          <AttributeID>Item Number</AttributeID>
+          <Name>Item Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="62b26a06-47ce-40be-a2ab-6d8577a91ad0">
           <AttributeID>Item Description</AttributeID>
           <Name>Item Description</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="27577a14-42d2-4d7c-9ecc-136988a967e6">
+        <AttributeRelationship dwd:design-time-name="a1ac8fc5-fbde-4464-9466-8e97d4270c05">
           <AttributeID>Bottle Volume Ml</AttributeID>
           <Name>Bottle Volume Ml</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="eca1a795-2018-4cfa-a4b1-c516a50885e6">
+        <AttributeRelationship dwd:design-time-name="df90e807-2cac-45bc-9fb2-a52e82245af4">
           <AttributeID>State Bottle Cost</AttributeID>
           <Name>State Bottle Cost</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="21b4f530-f69f-447d-ad36-a27a957477be">
+        <AttributeRelationship dwd:design-time-name="55ae520a-2dcc-4bf6-b8a2-d678e9a69895">
           <AttributeID>State Bottle Retail</AttributeID>
           <Name>State Bottle Retail</Name>
         </AttributeRelationship>
@@ -116,64 +140,119 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="789ef182-5e63-4b5d-86aa-d6b86304b17d">
+    <Attribute dwd:design-time-name="3e3ae188-1f2f-4fac-8f5a-461bdfd4fb01">
+      <ID>Item Number</ID>
+      <Name>Item Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a547f18-b2fb-4f8c-8080-c2d5c5be9ab8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="648b9309-5abb-436a-8243-409c9ffbf352">
+            <TableID>dbo_DIM_Item</TableID>
+            <ColumnID>item_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ee9d03d8-837c-4ba7-817c-1c7316dd530a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ac176109-5bc7-4dbf-bc79-071ecb9b777b">
+          <TableID>dbo_DIM_Item</TableID>
+          <ColumnID>item_number</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c82c30b4-9570-4000-983d-b9a9d926f92f">
       <ID>Item Description</ID>
       <Name>Item Description</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4fefe8b6-534c-4ea3-ac98-1dca30b8ff19">
+        <KeyColumn dwd:design-time-name="3763dc45-c182-42ce-a72e-47223527428c">
           <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="193a301a-2761-4cba-b79b-933486eadae2">
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69e7a13a-d40b-4813-be8c-25537f5d58a7">
             <TableID>dbo_DIM_Item</TableID>
-            <ColumnID>item_description</ColumnID>
+            <ColumnID>item_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="f466f040-576d-4cd8-a821-eda995719867">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7dccba22-dc66-4bf5-8165-4f3ea3cd0b99">
+          <TableID>dbo_DIM_Item</TableID>
+          <ColumnID>item_description</ColumnID>
+        </Source>
+      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2cfa940e-61c3-457c-881b-04b23f8b8ffc">
+    <Attribute dwd:design-time-name="eb1d05ec-b439-49a1-b911-0df026928e1c">
       <ID>Bottle Volume Ml</ID>
       <Name>Bottle Volume Ml</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0a0e73d5-b9b7-46e3-a2e0-7b40a964f39f">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="980d6ed5-1adf-44b8-8e5f-6f458afcc5d4">
+        <KeyColumn dwd:design-time-name="69cbf42b-5643-4321-8dd3-ed78a7781faa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dec28eee-d1c6-44be-abcd-c3a23bf8aa15">
             <TableID>dbo_DIM_Item</TableID>
-            <ColumnID>bottle_volume_ml</ColumnID>
+            <ColumnID>item_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="a2f7eb50-6ca1-43db-8def-902073392141">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a1254006-9241-49ff-8f76-7f0beee6c972">
+          <TableID>dbo_DIM_Item</TableID>
+          <ColumnID>bottle_volume_ml</ColumnID>
+        </Source>
+      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fc5abbe2-e624-4470-9961-7490d27e0307">
+    <Attribute dwd:design-time-name="b5985603-f210-499e-b8fd-eda6131230ee">
       <ID>State Bottle Cost</ID>
       <Name>State Bottle Cost</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="efaf73e6-24dd-4a4e-a8ea-074203d2ee31">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d284686-a1fa-4dc9-8c6d-8e4c996a4eda">
+        <KeyColumn dwd:design-time-name="444e901a-81ee-4493-9c03-92c9ff9379e7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42334f26-6948-4eba-80b1-27e5797d9f30">
             <TableID>dbo_DIM_Item</TableID>
-            <ColumnID>state_bottle_cost</ColumnID>
+            <ColumnID>item_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="1cd23ce7-b5ff-4516-81e7-c86a17bce40f">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9b2992d0-f1c6-4882-bce3-523ac8276d80">
+          <TableID>dbo_DIM_Item</TableID>
+          <ColumnID>state_bottle_cost</ColumnID>
+        </Source>
+      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a1ac6c4d-fd01-4536-8f3c-52c82a5b81ce">
+    <Attribute dwd:design-time-name="54ce16e0-90c0-4c09-8745-57e8dcef2817">
       <ID>State Bottle Retail</ID>
       <Name>State Bottle Retail</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a644c1dd-5b59-400d-be71-2d9ee0b4759d">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="17b48183-635b-4dad-a9e4-f3212d728e74">
+        <KeyColumn dwd:design-time-name="b3f8d62b-0a98-4042-bb9b-109da9c44738">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4efdda3a-df6d-4b50-bb35-7c442eb0cd14">
             <TableID>dbo_DIM_Item</TableID>
-            <ColumnID>state_bottle_retail</ColumnID>
+            <ColumnID>item_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="30a2a297-dcf2-4210-ae3e-6a1979554e80">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="193c0228-650a-4f30-b9a0-315618460c9c">
+          <TableID>dbo_DIM_Item</TableID>
+          <ColumnID>state_bottle_retail</ColumnID>
+        </Source>
+      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

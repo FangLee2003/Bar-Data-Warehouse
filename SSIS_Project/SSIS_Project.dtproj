@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">FANGLEELAPTOP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIusy1S1oUet5EXKLsqkVgAAAAACAAAAAAAQZgAAAAEAACAAAADLu/LtZmlwU41l8GvoUhwDN5m9AD9MCEF2dPqiPt02TwAAAAAOgAAAAAIAACAAAAAc34nW4/t01JdnZYyWZ1/7+S4T8tj7FY/JR5nJQNi4bZAAAAAK4KOZoEQeAqP0egDsMhL0ksS9H354qqhEIySwfIUESvq86S3VyAmnzRJW2ijGd/p+VB5zIJs4iWcomxJ6IsTBJkEoiRYjcV1TJurbyA9GdhpuQ9ZAlE3n+3htW+vB181//pm86y8iFTn5Uh+nPb+E+p8AuW8+vq6sj/zzR2FfftSE80Jxh0Drk1lznS1gXKRAAAAAB6+Wjx0XoFA6cpf0HafBG7h5/v6YrulMXN9riWjFk7BYHhK7/w+grOre59mocSgzKKb9oL79+O3acOWk7ExNLw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIusy1S1oUet5EXKLsqkVgAAAAACAAAAAAAQZgAAAAEAACAAAABtDK9vyxQVYsAT1LY/7iE6iXITBCe+1G6BFuzWw7LhJAAAAAAOgAAAAAIAACAAAAD7cpcKmeB1LvUwobKGbr3tL+/SY7B5ydF/lzwyDRWgwpAAAAA5qQ6D/p7QAIBMr9qxX97uYYnOtcRohPPi8RXCDAHiF0Va4+ua739HFSg41SSdqftXAVDjMJdF+lLMp2wPwiwepj8Unaw2B5uWAQ5720WCJFZ0lXKDDCh1EV16TiV5TqN/3CecQuNUbqdsav/F9Tf+iy9QWOHRI4gMVNqshPdAGpZZ3CTqN5UrtXfyozo/4i5AAAAAkdIN2PAbo75eH5b/qdbmfrBol0LaKMrwniJ/vxu6D4EqFNKdi0uy1WN7NCIndgl73YEqyy61irWDFu3tzGoQ8g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">202</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">222</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{567C8F6E-9895-44CA-9EA1-E1842643EA6B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CD459AD2-1BE7-4A83-9999-C3486B8A2944}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -78,7 +78,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Liquid_DataWarehouse\Iowa_liquor_sales_2021_50k_rows.xls;Extended Properties="EXCEL 8.0;HDR=YES";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Bar-Data-Warehouse\Iowa_liquor_sales_2021_50k_rows.xls;Extended Properties="EXCEL 8.0;HDR=YES";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -93,7 +93,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\Liquid_DataWarehouse\Iowa_liquor_sales_2021_50k_rows.xls</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Bar-Data-Warehouse\Iowa_liquor_sales_2021_50k_rows.xls</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -166,7 +166,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\Liquid_DataWarehouse\Iowa_liquor_sales_2021_50k_rows.xls</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Bar-Data-Warehouse\Iowa_liquor_sales_2021_50k_rows.xls</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

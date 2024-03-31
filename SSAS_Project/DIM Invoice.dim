@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2e7b1691-6fca-483b-8334-9160367ca6e3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1bf38ceb-efcc-45d0-ac5c-1bf4a79ab346" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>DIM Invoice</ID>
   <Name>DIM Invoice</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1684" scrolltop="-4403" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8001" y="11832" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2161" scrolltop="-4032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7324" y="11091" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_Invoice" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4593" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_Invoice" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4593" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000f1110000d30b0000" />
             </control>
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-1684</Value>
+      <Value>-2161</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-4403</Value>
+      <Value>-4032</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,46 +68,50 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8bbe5f1d-4098-4cf3-9179-81782caa3ac5">
-    <DataSourceViewID>SSAS_Project_sourceview</DataSourceViewID>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="66002045-9b55-4c3b-8b45-70dbf1feb293">
+    <DataSourceViewID>SSIS Project 1</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="dd180b58-3092-4c57-b0a2-98c304ddba11">
+  <ErrorConfiguration dwd:design-time-name="234b94bf-8afd-41c7-928d-a8a98cc65880">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="81595e5b-962f-49f0-b191-20f7c16bfbcb">
+    <Attribute dwd:design-time-name="b2264afa-9029-41db-ad32-b05da81caaec">
       <ID>Invoice Key</ID>
       <Name>Invoice Key</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9bf5280b-4697-47a7-9a65-075930d39d20">
+        <KeyColumn dwd:design-time-name="0275085f-e174-4ce8-a387-15979a7122e3">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="29522cb7-3182-4580-a30a-e25bc79dccce">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d52ffc0d-21fc-44e8-8e32-246de9472de1">
             <TableID>dbo_DIM_Invoice</TableID>
             <ColumnID>invoice_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="d0ed33ea-bc77-4ab1-b454-213514ea7e3a">
+        <AttributeRelationship dwd:design-time-name="1fff2565-f435-4f0c-bf06-45eb447d6bf6">
+          <AttributeID>Invoice And Item Number</AttributeID>
+          <Name>Invoice And Item Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2d77305f-1167-4f8c-854b-ef482535ea2f">
           <AttributeID>Sale Dollars</AttributeID>
           <Name>Sale Dollars</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f44247ce-6662-4265-b139-32106708dba8">
+        <AttributeRelationship dwd:design-time-name="86848e07-970b-4c82-9803-152d0ea3f9a9">
           <AttributeID>Bottles Sold</AttributeID>
           <Name>Bottles Sold</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4a347a53-b448-4f69-bed7-609f15726d23">
+        <AttributeRelationship dwd:design-time-name="9139a15a-8579-4977-8d3b-ec579f587f69">
           <AttributeID>Volume Sold Liters</AttributeID>
           <Name>Volume Sold Liters</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d286ae7e-300f-4650-a37b-ebc1d81f5d2a">
+        <AttributeRelationship dwd:design-time-name="2c5304db-8202-4052-93bd-6203bf5efd89">
           <AttributeID>Volume Sold Gallons</AttributeID>
           <Name>Volume Sold Gallons</Name>
         </AttributeRelationship>
@@ -116,63 +120,119 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9bbbec83-7418-41c2-8447-afe6a33202a1">
+    <Attribute dwd:design-time-name="6b025b6a-bdcb-4c52-9c25-5899eab9e390">
+      <ID>Invoice And Item Number</ID>
+      <Name>Invoice And Item Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8bb18e08-849a-4311-b289-d064c8f07320">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f01aac3-1685-4257-9e12-3dedb5ae1724">
+            <TableID>dbo_DIM_Invoice</TableID>
+            <ColumnID>invoice_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f3ae4961-9fe0-439e-8be8-2e357ef6aab5">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d2586f93-d8b8-4b32-90cb-a062b4a31d58">
+          <TableID>dbo_DIM_Invoice</TableID>
+          <ColumnID>invoice_and_item_number</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f950647a-d99e-409e-91ba-326acab258ea">
       <ID>Sale Dollars</ID>
       <Name>Sale Dollars</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="13f25450-b943-4ef9-a03b-188974190700">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b303388-6cb2-431a-9e78-f164b7cc6655">
+        <KeyColumn dwd:design-time-name="d7c7758b-7036-47ae-b485-07fbf76e3727">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="60bb1011-afad-40ce-8633-27fa6d8426c1">
             <TableID>dbo_DIM_Invoice</TableID>
-            <ColumnID>sale_dollars</ColumnID>
+            <ColumnID>invoice_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="ca56d23d-482f-4a7d-b400-49d67b17d6b8">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="24e47bb3-13c7-42cb-8926-04814d2a0ffe">
+          <TableID>dbo_DIM_Invoice</TableID>
+          <ColumnID>sale_dollars</ColumnID>
+        </Source>
+      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="40c342ed-bf72-464d-b5fa-095ec36ef066">
+    <Attribute dwd:design-time-name="df78d36e-7490-4806-9747-751e1232cac2">
       <ID>Bottles Sold</ID>
       <Name>Bottles Sold</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="83407338-06c1-402f-94cf-feb5cc88d682">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c29ff4c-74fe-4181-9761-2d9bef73eb5f">
+        <KeyColumn dwd:design-time-name="84c0a586-8886-453a-9bdf-f772b9bac799">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="388c526f-bb1c-4844-b1b9-d1a70706e7ef">
             <TableID>dbo_DIM_Invoice</TableID>
-            <ColumnID>bottles_sold</ColumnID>
+            <ColumnID>invoice_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="ac054673-944a-4b06-a716-3e6829aac400">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f7fc5366-6788-45a3-9136-803d6f6183b2">
+          <TableID>dbo_DIM_Invoice</TableID>
+          <ColumnID>bottles_sold</ColumnID>
+        </Source>
+      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5efb77e9-d910-4b3e-af92-899b671a7313">
+    <Attribute dwd:design-time-name="9ff92fe2-77b1-443d-acdd-ed5c57e41ad9">
       <ID>Volume Sold Liters</ID>
       <Name>Volume Sold Liters</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6672c7e7-ec08-4070-a714-4f782557b731">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4b4f19f-6b21-4242-afbf-96e5b6111283">
+        <KeyColumn dwd:design-time-name="5a6d1da6-3f8e-42fe-97ee-d22b4374cb87">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb2e1b11-9a68-4d3f-8cb7-4d4d7004809a">
             <TableID>dbo_DIM_Invoice</TableID>
-            <ColumnID>volume_sold_liters</ColumnID>
+            <ColumnID>invoice_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="3545ac7f-5988-4f0a-9086-2838e7afe50f">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7e42fbe6-d431-44cf-8ced-2d0c44032183">
+          <TableID>dbo_DIM_Invoice</TableID>
+          <ColumnID>volume_sold_liters</ColumnID>
+        </Source>
+      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a443d519-a9fa-42fc-a545-08bb75ad1f19">
+    <Attribute dwd:design-time-name="62973b5b-8653-4285-94d2-b39ff6be61b3">
       <ID>Volume Sold Gallons</ID>
       <Name>Volume Sold Gallons</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4788a911-7129-4250-b12c-71bd2d6741d8">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f398dd8-2612-449b-b85b-ce96dd03e2e0">
+        <KeyColumn dwd:design-time-name="97f69f86-40da-4919-a01f-c12039b65897">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af6fd221-dab0-44c9-9794-3ced2df81794">
             <TableID>dbo_DIM_Invoice</TableID>
-            <ColumnID>volume_sold_gallons</ColumnID>
+            <ColumnID>invoice_key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="0711c81e-31e4-460a-bd2a-f14b031fe12a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="256c22ad-7462-492f-be60-3596a679a3aa">
+          <TableID>dbo_DIM_Invoice</TableID>
+          <ColumnID>volume_sold_gallons</ColumnID>
+        </Source>
+      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
