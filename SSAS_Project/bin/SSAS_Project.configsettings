@@ -1,0 +1,109 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>SSIS Project</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=LAPTOP-RG5QA0PH;Persist Security Info=True;Password=;User ID=;Initial Catalog=SSIS_Project</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>DIM Category</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM Invoice</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM Item</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM Store</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM Vendor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM Time</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>SSAS_Project_cube</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>DIM Category</ID>
+            <Partitions>
+              <Partition>
+                <ID>DIM Category</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>DIM Invoice</ID>
+            <Partitions>
+              <Partition>
+                <ID>DIM Invoice</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>DIM Item</ID>
+            <Partitions>
+              <Partition>
+                <ID>DIM Item</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>DIM Store</ID>
+            <Partitions>
+              <Partition>
+                <ID>DIM Store</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>DIM Vendor</ID>
+            <Partitions>
+              <Partition>
+                <ID>DIM Vendor</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FACT Amount</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT Amount</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FACT Sales</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT Sales</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>DIM Time</ID>
+            <Partitions>
+              <Partition>
+                <ID>DIM Time</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

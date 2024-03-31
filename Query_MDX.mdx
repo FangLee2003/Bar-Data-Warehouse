@@ -1,0 +1,8 @@
+Select [Measures].[profit] on columns,
+non empty [DIM_Category].[category_name].members * [DIM_Item].[item_description].members * on rows
+From [BarDB]
+where [DIM_Time].[Year].[2024]
+
+Select {[Measures]. [cost], [revenue], [profit]} on columns,
+non empty order ([DIM_Item].[category_name].members, [Measures].[profit], DESC) on row
+From [BarDB]
