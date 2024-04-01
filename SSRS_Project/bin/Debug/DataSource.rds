@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="DataSource">
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSource">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=LAPTOP-RG5QA0PH;Initial Catalog=SSIS_Project</ConnectString>
+    <ConnectString>Data Source=FANGLEELAPTOP;Initial Catalog=SSIS_Project;TrustServerCertificate=True</ConnectString>
   </ConnectionProperties>
   <DataSourceID>78ef422d-572a-4539-8614-b4198419339d</DataSourceID>
 </RptDataSource>

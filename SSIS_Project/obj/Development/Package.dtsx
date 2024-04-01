@@ -11,8 +11,8 @@
   DTS:LocaleID="3072"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="221"
-  DTS:VersionGUID="{1CC75AF4-E04C-4F15-8FE1-A87E5B42FC38}">
+  DTS:VersionBuild="235"
+  DTS:VersionGUID="{CC0B1499-068C-4506-83DA-166C382B9795}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -41,7 +41,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIusy1S1oUet5EXKLsqkVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD+M0ST0gQsa04qmYPw94aOA0oDTlcI7/Lh7Yh/91F4XQAAAAAOgAAAAAIAACAAAAACkV6RGOXLAw+quCqA24IUX3mlhcaFtGcef7ECND8DWxAAAAAWkO6bbou8YcBCU6BwblP7QAAAABPwrQeT9hEUvtiuMVbvDFPmxq2hHp8dP+ptNTks63lLdNn+1zkve4pAPOI+U2d91R+h3sncZ2V2vJMLLtkDDYA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIusy1S1oUet5EXKLsqkVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAClNi1/nVyJEikp3BCXFRlPVYLmXQG9TP8SjnIYla9l5wAAAAAOgAAAAAIAACAAAAA5murOqzdIIqGOUg5Lb2ALCn3hMaYrML9zZWVl7eXkahAAAAD5WhBlf2kbkw5YDJWkMwMWQAAAAF8JkToAK42jlJ1SJBX4uQywm7q0V8aHUgkxsDil0Y3R82CVczmFfqhcVDPWxzzqU+608ZS8Fwh0BFo9Lje8kaw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5108,7 +5108,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[DIM_Location]</property>
+                  name="OpenRowset">[DIM_Location]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -8695,6 +8695,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       externalMetadataColumnId="Package\DIM_Time\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
                       lineageId="Package\DIM_Time\Derived Column.Outputs[Derived Column Output].Columns[year]" />
                     <inputColumn
+                      refId="Package\DIM_Time\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[time_key]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="time_key"
+                      externalMetadataColumnId="Package\DIM_Time\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[time_key]"
+                      lineageId="Package\DIM_Time\Script Component.Outputs[Output 0].Columns[time_key]" />
+                    <inputColumn
                       refId="Package\DIM_Time\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date]"
                       cachedDataType="i4"
                       cachedName="date"
@@ -8715,6 +8723,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       refId="Package\DIM_Time\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
                       dataType="i4"
                       name="year" />
+                    <externalMetadataColumn
+                      refId="Package\DIM_Time\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[time_key]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="time_key" />
                     <externalMetadataColumn
                       refId="Package\DIM_Time\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
                       dataType="dbTimeStamp"
@@ -17175,7 +17189,7 @@ where [refTable].[vendor_name] = ?</property>
     design-time-name="Package\DIM_Category">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\DIM_Category\Script Component"
@@ -17211,9 +17225,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17235,9 +17247,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17259,9 +17269,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17297,7 +17305,7 @@ where [refTable].[vendor_name] = ?</property>
     design-time-name="Package\DIM_Invoice">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\DIM_Invoice\Script Component"
@@ -17333,9 +17341,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17357,9 +17363,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17381,9 +17385,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17419,7 +17421,7 @@ where [refTable].[vendor_name] = ?</property>
     design-time-name="Package\DIM_Item">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\DIM_Item\Script Component"
@@ -17455,9 +17457,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17479,9 +17479,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17503,9 +17501,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17541,7 +17537,7 @@ where [refTable].[vendor_name] = ?</property>
     design-time-name="Package\DIM_Location">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\DIM_Location\Script Component"
@@ -17577,9 +17573,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17601,9 +17595,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17612,22 +17604,20 @@ where [refTable].[vendor_name] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38.0352966594037"
+              EndConnector="0,38.035296659404"
               Start="0,0"
-              End="0,30.5352966594037">
+              End="0,30.535296659404">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.5352966594037" />
+                    End="0,30.535296659404" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17663,11 +17653,7 @@ where [refTable].[vendor_name] = ?</property>
     design-time-name="Package\DIM_Store">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\DIM_Store\Script Component"
-          TopLeft="330.714280786259,208.571425463472" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\DIM_Store\OLE DB Destination"
@@ -17680,6 +17666,10 @@ where [refTable].[vendor_name] = ?</property>
           Size="126.4,41.6"
           Id="Package\DIM_Store\Aggregate"
           TopLeft="345.714280562742,131.71428375159" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\DIM_Store\Script Component"
+          TopLeft="330.714280786259,208.571425463472" />
         <EdgeLayout
           Id="Package\DIM_Store.Paths[Output 0]"
           TopLeft="411.771423675333,250.171425463472">
@@ -17699,9 +17689,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-25.0951171875,6.2643130732435,50.190234375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17723,9 +17711,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.8837109375,14.877758392755,55.767421875,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17747,9 +17733,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-25.0951171875,8.26431304344115,50.190234375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17799,6 +17783,10 @@ where [refTable].[vendor_name] = ?</property>
           Id="Package\DIM_Time\Derived Column"
           TopLeft="557.692299382045,202.307689293073" />
         <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\DIM_Time\Script Component"
+          TopLeft="284.615380374285,201.538458535304" />
+        <NodeLayout
           Size="126.4,41.6"
           Id="Package\DIM_Time\Aggregate"
           TopLeft="323.84614902047,100.769229267652" />
@@ -17806,6 +17794,28 @@ where [refTable].[vendor_name] = ?</property>
           Size="170.4,41.6"
           Id="Package\DIM_Time\OLE DB Destination"
           TopLeft="59.9999991059303,203.846150808609" />
+        <EdgeLayout
+          Id="Package\DIM_Time.Paths[Output 0]"
+          TopLeft="284.615380374285,223.492304671957">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-54.2153812683547,0"
+              Start="0,0"
+              End="-46.7153812683547,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-46.7153812683547,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DIM_Time.Paths[Excel Source Output]"
           TopLeft="227.015383294913,122.607690790639">
@@ -17820,6 +17830,28 @@ where [refTable].[vendor_name] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="89.3307657255575,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM_Time.Paths[Derived Column Output]"
+          TopLeft="557.692299382045,222.923073914188">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-110.67691900776,0"
+              Start="0,0"
+              End="-103.17691900776,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-103.17691900776,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17872,54 +17904,6 @@ where [refTable].[vendor_name] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\DIM_Time\Script Component"
-          TopLeft="284.615380374285,201.538458535304" />
-        <EdgeLayout
-          Id="Package\DIM_Time.Paths[Derived Column Output]"
-          TopLeft="557.692299382045,222.923073914188">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-110.67691900776,0"
-              Start="0,0"
-              End="-103.17691900776,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-103.17691900776,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DIM_Time.Paths[Output 0]"
-          TopLeft="284.615380374285,223.492304671957">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-54.2153812683547,0"
-              Start="0,0"
-              End="-46.7153812683547,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-46.7153812683547,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -17953,7 +17937,7 @@ where [refTable].[vendor_name] = ?</property>
     design-time-name="Package\DIM_Vendor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\DIM_Vendor\OLE DB Destination"
@@ -17989,9 +17973,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18013,9 +17995,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18037,9 +18017,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18099,15 +18077,15 @@ where [refTable].[vendor_name] = ?</property>
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\FACT_Amount\OLE DB Destination"
-          TopLeft="332.285709311463,294.999995604158" />
-        <NodeLayout
-          Size="101.6,41.6"
-          Id="Package\FACT_Amount\Time"
-          TopLeft="708.692297824301,65.6307691468647" />
+          TopLeft="42.2857093114629,167.999995604158" />
         <NodeLayout
           Size="126.4,41.6"
           Id="Package\FACT_Amount\Aggregate"
           TopLeft="259.999996125698,169.999997466803" />
+        <NodeLayout
+          Size="101.6,41.6"
+          Id="Package\FACT_Amount\Time"
+          TopLeft="708.692297824301,65.6307691468647" />
         <EdgeLayout
           Id="Package\FACT_Amount.Paths[Lookup Match Output2]"
           TopLeft="488.461532076964,187.730767323306">
@@ -18128,7 +18106,7 @@ where [refTable].[vendor_name] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-127.792506256883,5,161.0234765625,11.609375"
+              BoundingBox="-127.792506256883,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -18152,7 +18130,7 @@ where [refTable].[vendor_name] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-80.51173828125,17.8760813559477,161.0234765625,11.609375"
+              BoundingBox="-80.51173828125,17.8760813559477,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -18176,7 +18154,7 @@ where [refTable].[vendor_name] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-131.930967459496,5,161.0234765625,11.609375"
+              BoundingBox="-131.930967459496,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -18199,9 +18177,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8.60294308107635,5,55.767421875,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18223,9 +18199,7 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="10.0047490483752,5,55.767421875,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18247,45 +18221,29 @@ where [refTable].[vendor_name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="4.61244121221399,5,55.767421875,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\FACT_Amount.Paths[Aggregate Output 1]"
-          TopLeft="323.199996125698,211.599997466803">
+          TopLeft="259.999996125698,189.799996535481">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="94.285713185765,83.399998137355"
+              EndConnector="-47.3142868142351,0"
               Start="0,0"
-              End="94.285713185765,75.899998137355">
+              End="-39.8142868142351,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.6999990686775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.6999990686775"
-                    Point2="0,41.6999990686775"
-                    Point3="4,41.6999990686775" />
-                  <mssgle:LineSegment
-                    End="90.285713185765,41.6999990686775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="90.285713185765,41.6999990686775"
-                    Point2="94.285713185765,41.6999990686775"
-                    Point3="94.285713185765,45.6999990686775" />
-                  <mssgle:LineSegment
-                    End="94.285713185765,75.899998137355" />
+                    End="-39.8142868142351,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="19.3543604991325,46.6999990686775,55.5769921875,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18825,26 +18783,26 @@ where [refTable].[vendor_name] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-45.0746726377765,-58.2533243490402"
+              EndConnector="-45.074672637777,-58.25332434904"
               Start="0,0"
-              End="-37.5746726377765,-58.2533243490402">
+              End="-37.574672637777,-58.25332434904">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-18.5373363188883,0" />
+                    End="-18.5373363188885,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-18.5373363188883,0"
-                    Point2="-22.5373363188883,0"
-                    Point3="-22.5373363188883,-4" />
+                    Point1="-18.5373363188885,0"
+                    Point2="-22.5373363188885,0"
+                    Point3="-22.5373363188885,-4" />
                   <mssgle:LineSegment
-                    End="-22.5373363188883,-54.2533243490402" />
+                    End="-22.5373363188885,-54.25332434904" />
                   <mssgle:CubicBezierSegment
-                    Point1="-22.5373363188883,-54.2533243490402"
-                    Point2="-22.5373363188883,-58.2533243490402"
-                    Point3="-26.5373363188883,-58.2533243490402" />
+                    Point1="-22.5373363188885,-54.25332434904"
+                    Point2="-22.5373363188885,-58.25332434904"
+                    Point3="-26.5373363188885,-58.25332434904" />
                   <mssgle:LineSegment
-                    End="-37.5746726377765,-58.2533243490402" />
+                    End="-37.574672637777,-58.25332434904" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -18908,7 +18866,7 @@ where [refTable].[vendor_name] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -18918,7 +18876,7 @@ where [refTable].[vendor_name] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

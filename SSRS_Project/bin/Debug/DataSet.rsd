@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource</DataSourceReference>
+      <CommandText>SELECT    DIM_Time.quarter, DIM_Time.month, FACT_Sales.profit, DIM_Category.category_name
+FROM         DIM_Category INNER JOIN
+                      FACT_Sales ON DIM_Category.category_key = FACT_Sales.category_key INNER JOIN
+                      DIM_Time ON FACT_Sales.time_key = DIM_Time.time_key</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="quarter">
+        <DataField>quarter</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="month">
+        <DataField>month</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="profit">
+        <DataField>profit</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="category_name">
+        <DataField>category_name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

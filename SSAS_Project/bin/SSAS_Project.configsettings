@@ -33,11 +33,6 @@
         <ID>DIM Location</ID>
       </Dimension>
     </Dimensions>
-    <MiningStructures>
-      <MiningStructure>
-        <ID>Linear Regression Model</ID>
-      </MiningStructure>
-    </MiningStructures>
     <Cubes>
       <Cube>
         <ID>SSIS Project 1</ID>

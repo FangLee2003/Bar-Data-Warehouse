@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>SSAS DataSource</DataSourceReference>
+      <CommandText> SELECT NON EMPTY { [Measures].[Profit], [Measures].[Revenue], [Measures].[Total Bottles Sold] } ON COLUMNS, NON EMPTY { ([DIM Time].[Quarter].[Quarter].ALLMEMBERS * [DIM Time].[Month].[Month].ALLMEMBERS * [DIM Location].[City].[City].ALLMEMBERS * [DIM Location].[County].[County].ALLMEMBERS * [DIM Location].[Address].[Address].ALLMEMBERS * [DIM Vendor].[Vendor Name].[Vendor Name].ALLMEMBERS * [DIM Store].[Store Name].[Store Name].ALLMEMBERS * [DIM Category].[Category Name].[Category Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAP Project] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>MDX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Time</DimensionName>
+                    <HierarchyName>Quarter</HierarchyName>
+                    <HierarchyUniqueName>[DIM Time].[Quarter]</HierarchyUniqueName>
+                    <LevelName>Quarter</LevelName>
+                    <UniqueName>[DIM Time].[Quarter].[Quarter]</UniqueName>
+                  </ID>
+                  <ItemCaption>Quarter</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Time</DimensionName>
+                    <HierarchyName>Month</HierarchyName>
+                    <HierarchyUniqueName>[DIM Time].[Month]</HierarchyUniqueName>
+                    <LevelName>Month</LevelName>
+                    <UniqueName>[DIM Time].[Month].[Month]</UniqueName>
+                  </ID>
+                  <ItemCaption>Month</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Location</DimensionName>
+                    <HierarchyName>City</HierarchyName>
+                    <HierarchyUniqueName>[DIM Location].[City]</HierarchyUniqueName>
+                    <LevelName>City</LevelName>
+                    <UniqueName>[DIM Location].[City].[City]</UniqueName>
+                  </ID>
+                  <ItemCaption>City</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Location</DimensionName>
+                    <HierarchyName>County</HierarchyName>
+                    <HierarchyUniqueName>[DIM Location].[County]</HierarchyUniqueName>
+                    <LevelName>County</LevelName>
+                    <UniqueName>[DIM Location].[County].[County]</UniqueName>
+                  </ID>
+                  <ItemCaption>County</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Location</DimensionName>
+                    <HierarchyName>Address</HierarchyName>
+                    <HierarchyUniqueName>[DIM Location].[Address]</HierarchyUniqueName>
+                    <LevelName>Address</LevelName>
+                    <UniqueName>[DIM Location].[Address].[Address]</UniqueName>
+                  </ID>
+                  <ItemCaption>Address</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Vendor</DimensionName>
+                    <HierarchyName>Vendor Name</HierarchyName>
+                    <HierarchyUniqueName>[DIM Vendor].[Vendor Name]</HierarchyUniqueName>
+                    <LevelName>Vendor Name</LevelName>
+                    <UniqueName>[DIM Vendor].[Vendor Name].[Vendor Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Vendor Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Store</DimensionName>
+                    <HierarchyName>Store Name</HierarchyName>
+                    <HierarchyUniqueName>[DIM Store].[Store Name]</HierarchyUniqueName>
+                    <LevelName>Store Name</LevelName>
+                    <UniqueName>[DIM Store].[Store Name].[Store Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Store Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Category</DimensionName>
+                    <HierarchyName>Category Name</HierarchyName>
+                    <HierarchyUniqueName>[DIM Category].[Category Name]</HierarchyUniqueName>
+                    <LevelName>Category Name</LevelName>
+                    <UniqueName>[DIM Category].[Category Name].[Category Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Category Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Profit</MeasureName>
+                    <UniqueName>[Measures].[Profit]</UniqueName>
+                  </ID>
+                  <ItemCaption>Profit</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Revenue</MeasureName>
+                    <UniqueName>[Measures].[Revenue]</UniqueName>
+                  </ID>
+                  <ItemCaption>Revenue</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Total Bottles Sold</MeasureName>
+                    <UniqueName>[Measures].[Total Bottles Sold]</UniqueName>
+                  </ID>
+                  <ItemCaption>Total Bottles Sold</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>OLAP Project</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement> SELECT NON EMPTY { [Measures].[Profit], [Measures].[Revenue], [Measures].[Total Bottles Sold] } ON COLUMNS, NON EMPTY { ([DIM Time].[Quarter].[Quarter].ALLMEMBERS * [DIM Time].[Month].[Month].ALLMEMBERS * [DIM Location].[City].[City].ALLMEMBERS * [DIM Location].[County].[County].ALLMEMBERS * [DIM Location].[Address].[Address].ALLMEMBERS * [DIM Vendor].[Vendor Name].[Vendor Name].ALLMEMBERS * [DIM Store].[Store Name].[Store Name].ALLMEMBERS * [DIM Category].[Category Name].[Category Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAP Project] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Quarter">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[DIM Time].[Quarter].[Quarter]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Month">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[DIM Time].[Month].[Month]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="City">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[DIM Location].[City].[City]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Category_Name">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[DIM Category].[Category Name].[Category Name]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="County">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[DIM Location].[County].[County]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Profit">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Profit]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Address">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[DIM Location].[Address].[Address]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Vendor_Name">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[DIM Vendor].[Vendor Name].[Vendor Name]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Store_Name">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[DIM Store].[Store Name].[Store Name]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Revenue">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Revenue]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Total_Bottles_Sold">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Total Bottles Sold]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

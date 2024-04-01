@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <ProcessingOption>Default</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -47,7 +47,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>ZT6kssmrPKi9mumMKP9EcOZQGk4=4/1/2024 3:47:17 AM3/30/2024 7:00:02 PM</TimeStamp>
+        <TimeStamp>6x8MHGSS1BTTlxWD6qjRda1/Nio=4/1/2024 10:55:14 PM3/30/2024 7:00:02 PM</TimeStamp>
         <ID>
           <String>DIM Time</String>
         </ID>
@@ -82,16 +82,9 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>DSrN98JqmNgZuIufGwiwIHggdxE=3/31/2024 7:15:15 PM3/30/2024 7:00:02 PMtiO46uaIbQrufDY6GJiGu4qqelk=3/31/2024 10:14:20 AM3/30/2024 7:00:02 PM</TimeStamp>
+        <TimeStamp>DSrN98JqmNgZuIufGwiwIHggdxE=4/1/2024 10:45:27 PM3/30/2024 7:00:02 PMtiO46uaIbQrufDY6GJiGu4qqelk=3/31/2024 10:14:20 AM3/30/2024 7:00:02 PM</TimeStamp>
         <ID>
           <String>SSIS Project 1</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>DBQZJPjbyjwv+uLJAS4yBJe4C9w=4/1/2024 4:17:55 AM4/1/2024 4:17:53 AM</TimeStamp>
-        <ID>
-          <String>Linear Regression Model</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -106,5 +99,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-03-31T21:20:06.26Z</LastDeployed>
+  <LastDeployed>2024-04-01T15:55:36.676667Z</LastDeployed>
 </DeploymentSnapshot>

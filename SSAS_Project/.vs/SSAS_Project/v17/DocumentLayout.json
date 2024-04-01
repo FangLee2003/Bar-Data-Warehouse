@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Bar-Data-Warehouse\\SSAS_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|D:\\Bar-Data-Warehouse\\SSAS_Project\\DIM Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|solutionrelative:DIM Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+      "AbsoluteMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|D:\\Bar-Data-Warehouse\\SSAS_Project\\SSAS Project.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|solutionrelative:SSAS Project.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|D:\\Bar-Data-Warehouse\\SSAS_Project\\SSAS Project.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|solutionrelative:SSAS Project.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|D:\\Bar-Data-Warehouse\\SSAS_Project\\DIM Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{E5F8A175-61CC-41BB-B116-454EEBFFF909}|SSAS_Project.dwproj|solutionrelative:DIM Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,6 +31,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SSAS Project.dsv [Design]",
+              "DocumentMoniker": "D:\\Bar-Data-Warehouse\\SSAS_Project\\SSAS Project.dsv",
+              "RelativeDocumentMoniker": "SSAS Project.dsv",
+              "ToolTip": "D:\\Bar-Data-Warehouse\\SSAS_Project\\SSAS Project.dsv [Design]",
+              "RelativeToolTip": "SSAS Project.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-01T15:56:06.927Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DIM Time.dim [Design]",
               "DocumentMoniker": "D:\\Bar-Data-Warehouse\\SSAS_Project\\DIM Time.dim",
               "RelativeDocumentMoniker": "DIM Time.dim",
@@ -45,7 +61,8 @@
               "ToolTip": "D:\\Bar-Data-Warehouse\\SSAS_Project\\SSAS Project.cube [Design]",
               "RelativeToolTip": "SSAS Project.cube [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-03-31T19:12:56.155Z"
+              "WhenOpened": "2024-03-31T19:12:56.155Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

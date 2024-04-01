@@ -4,15 +4,15 @@
     <FullPath>Debug</FullPath>
     <OutputPath>bin\Debug</OutputPath>
     <ErrorLevel>2</ErrorLevel>
-    <OverwriteDatasets>False</OverwriteDatasets>
-    <OverwriteDataSources>False</OverwriteDataSources>
+    <OverwriteDatasets>True</OverwriteDatasets>
+    <OverwriteDataSources>True</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
     <TargetReportFolder>SSRS_Project</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
-    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+    <TargetServerURL>http://fangleelaptop/ReportServer</TargetServerURL>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
     <FullPath>DebugLocal</FullPath>
@@ -49,14 +49,20 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <DataSource Include="DataSource.rds" />
+    <DataSet Include="Cost and Profit By Location Dataset.rsd" />
+    <DataSet Include="Revenue By Category Dataset.rsd" />
+    <DataSet Include="Total Bottle Sold By Store DataSet.rsd" />
+    <DataSet Include="Total Bottle Sold By Vendor DataSet.rsd" />
   </ItemGroup>
   <ItemGroup>
-    <Report Include="Category profit report.rdl" />
-    <Report Include="Finance_report.rdl" />
-    <Report Include="Store bottles sold report.rdl" />
-    <Report Include="Store profit report.rdl" />
-    <Report Include="Vendor profit report.rdl" />
+    <DataSource Include="SSAS DataSource.rds" />
+    <DataSource Include="SSIS DataSource.rds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Report Include="Cost and Profit By Location Report.rdl" />
+    <Report Include="Revenue By Category Report.rdl" />
+    <Report Include="Total Bottle Sold By Store.rdl" />
+    <Report Include="Total Bottle Sold By Vendor.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
