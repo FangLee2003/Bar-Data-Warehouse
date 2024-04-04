@@ -1,4 +1,5 @@
 # Bar Data Warehouse
+<span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">SSIS, SSAS, SSRS and Data Mining with AI</span>
 
 ## SSIS Project
 ### FACT_Sales Data Flow
