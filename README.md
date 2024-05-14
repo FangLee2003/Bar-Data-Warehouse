@@ -2,6 +2,7 @@
 <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">SSIS, SSAS, SSRS and Data Mining with AI</span>
 
 ## SSRS Project
+### Tableau Dashboard
 ![Tableau Dashboard](https://github.com/FangLee2003/Bar-Data-Warehouse/assets/75077747/99003692-d315-42b3-bff8-d30cddc91bd6)
 
 ## SSAS Project
