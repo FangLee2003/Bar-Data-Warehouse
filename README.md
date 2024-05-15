@@ -3,7 +3,7 @@
 
 ## SSRS Project
 ### Tableau Dashboard
-![Tableau Dashboard](https://github.com/FangLee2003/Bar-Data-Warehouse/assets/75077747/fa892086-eb80-409d-97f7-1f1990c12757)
+![Tableau Dashboard](https://github.com/FangLee2003/Bar-Data-Warehouse/assets/75077747/f0685ef3-874a-4fee-9526-20e1b14766c3)
 
 ## SSAS Project
 ### Association Rules Model (Data Mining)
